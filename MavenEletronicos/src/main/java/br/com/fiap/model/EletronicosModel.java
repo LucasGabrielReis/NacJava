@@ -1,18 +1,22 @@
 package br.com.fiap.model;
 
 public class EletronicosModel {
-	private String nome;
-	private String tipo;
 	private Long id;
-
+	private String tipo;
+	private String nome;
+	private String descricao;
+	private double preco;
+	
 	public EletronicosModel() {
-
+		
 	}
-
-	public EletronicosModel(Long id, String nome, String tipo) {
+	
+	public EletronicosModel(long id, String tipo, String nome, String descricao, double preco) {
 		this.id = id;
-		this.nome = nome;
 		this.tipo = tipo;
+		this.nome = nome;
+		this.descricao = descricao;
+		this.preco = preco;
 	}
 
 	public Long getId() {
@@ -23,14 +27,6 @@ public class EletronicosModel {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
 	public String getTipo() {
 		return tipo;
 	}
@@ -39,4 +35,29 @@ public class EletronicosModel {
 		this.tipo = tipo;
 	}
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(Long preco) {
+		this.preco = preco;
+	}
+	
+	
 }
